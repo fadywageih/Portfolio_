@@ -111,7 +111,7 @@
             <img src="./images/hand-icon.png" alt="" class="w-6">
         </h3>
 
-        <h1 class="text-3xl sm:text-6xl lg:text-[66px]">FullStack Developer.</h1>
+        <h1 class="text-3xl sm:text-6xl lg:text-[66px]">Software Engineer.</h1>
         <p class="max-w-2xl mx-auto">Passionate about building end-to-end web apps using .NET (C#, ASP.NET Core) and
             Angular, ensuring clean architecture and seamless user experiences.</p>
         <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
@@ -120,7 +120,7 @@
                 Contact me
                 <img src="./images/right-arrow-white.png" alt="" class="w-5">
             </a>
-            <a href="./CV_Fady_Wageih.pdf" download="Fady_wageih_CV_Resume.pdf"
+            <a href="./Fady wageih fakhry.pdf" download="Fady_wageih_CV_Resume.pdf"
                 class="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black">
                 My resume
                 <img src="./images/download-icon.png" alt="Download" class="w-5">
@@ -198,143 +198,363 @@
     </div>
 
     <!-- Services Section -->
-    <div id="Services" class="w-full px-4 sm:px-[12%] py-10 scroll-mt-20">
+    <div id="Services"
+        class="w-full px-4 sm:px-[12%] py-10 scroll-mt-20 bg-gradient-to-b from-white via-white to-gray-50 dark:from-darkTheme dark:via-darkTheme dark:to-darkTheme">
         <div class="max-w-7xl mx-auto">
             <h4 class="text-center mb-2 text-lg">What I Offer</h4>
-            <h2 class="text-center text-4xl sm:text-5xl">My Services</h2>
+            <h2 class="text-center text-4xl sm:text-5xl mb-3">My Services</h2>
             <p class="text-center max-w-2xl mx-auto mt-5 mb-12 text-gray-600 dark:text-white/80">
-                As a Full Stack .NET/Angular developer, I provide comprehensive solutions from backend to frontend,
-                delivering robust and scalable applications.
+                As a Software Engineer, I provide comprehensive solutions for building scalable and elegant
+                applications.
             </p>
 
             <div class="flex justify-center">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-6xl">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-5xl">
                     <!-- Service Card 1 -->
-                    <div
-                        class="border border-gray-300 rounded-lg px-6 py-8 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 transition-all dark:border-gray-600 dark:hover:bg-darkHover/50">
-                        <div class="flex justify-center">
-                            <img src="./images/web-icon.png" alt="Full Stack Development" class="w-10">
+                    <div class="service-card group bg-white dark:bg-darkHover/30 border-2 border-transparent hover:border-gradientFrom rounded-2xl px-8 py-10 cursor-pointer transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 dark:hover:shadow-2xl dark:hover:shadow-gradientFrom/30"
+                        data-title="Full Stack Development" data-image="./images/work-3.png"
+                        data-description="End-to-end web applications using .NET Core backend and Angular frontend with clean architecture, RESTful APIs, and microservices. I build complete solutions that are scalable, maintainable, and user-centric.">
+                        <div class="flex justify-center mb-6">
+                            <div
+                                class="w-16 h-16 bg-gradient-to-br from-gradientFrom to-gradientTo rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                <img src="./images/web-icon.png" alt="Full Stack Development"
+                                    class="w-10 filter brightness-0 invert">
+                            </div>
                         </div>
-                        <h3 class="text-lg my-4 text-gray-700 text-center dark:text-white/80">Full Stack Development
-                        </h3>
-                        <p class="text-sm text-gray-600 leading-6 text-center dark:text-white/80">
-                            End-to-end web applications using .NET Core backend and Angular frontend with clean
-                            architecture, RESTful APIs, and microservices.
+                        <h3
+                            class="text-xl font-bold my-4 text-gray-800 text-center dark:text-white group-hover:text-gradientFrom dark:group-hover:text-gradientFrom transition-colors">
+                            Full Stack Development</h3>
+                        <p
+                            class="text-sm text-gray-600 leading-6 text-center dark:text-white/70 group-hover:text-gray-700 dark:group-hover:text-white transition-colors">
+                            Comprehensive end-to-end solutions with modern technologies and best practices.
                         </p>
+                        <div class="flex justify-center mt-6 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span
+                                class="text-xs font-semibold text-gradientFrom dark:text-gradientFrom tracking-widest">CLICK
+                                TO LEARN MORE</span>
+                        </div>
                     </div>
 
                     <!-- Service Card 2 -->
-                    <div
-                        class="border border-gray-300 rounded-lg px-6 py-8 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 transition-all dark:border-gray-600 dark:hover:bg-darkHover/50">
-                        <div class="flex justify-center">
-                            <img src="./images/api-icon.png" alt=".NET Backend" class="w-10">
+                    <div class="service-card group bg-white dark:bg-darkHover/30 border-2 border-transparent hover:border-gradientFrom rounded-2xl px-8 py-10 cursor-pointer transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 dark:hover:shadow-2xl dark:hover:shadow-gradientFrom/30"
+                        data-title=".NET Backend Development" data-image="./images/work-6.jpg"
+                        data-description="High-performance APIs with .NET Core, Entity Framework, and SQL Server. I specialize in secure authentication using JWT, Identity, and OAuth. Build robust, scalable backend systems that power modern applications.">
+                        <div class="flex justify-center mb-6">
+                            <div
+                                class="w-16 h-16 bg-gradient-to-br from-gradientFrom to-gradientTo rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                <img src="./images/api-icon.png" alt=".NET Backend"
+                                    class="w-10 filter brightness-0 invert">
+                            </div>
                         </div>
-                        <h3 class="text-lg my-4 text-gray-700 text-center dark:text-white/80">.NET Backend</h3>
-                        <p class="text-sm text-gray-600 leading-6 text-center dark:text-white/80">
-                            High-performance APIs with .NET Core, Entity Framework, and SQL Server. Secure
-                            authentication using JWT, Identity, and OAuth.
+                        <h3
+                            class="text-xl font-bold my-4 text-gray-800 text-center dark:text-white group-hover:text-gradientFrom dark:group-hover:text-gradientFrom transition-colors">
+                            .NET Backend</h3>
+                        <p
+                            class="text-sm text-gray-600 leading-6 text-center dark:text-white/70 group-hover:text-gray-700 dark:group-hover:text-white transition-colors">
+                            Powerful backend APIs with enterprise-grade security and performance.
                         </p>
+                        <div class="flex justify-center mt-6 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span
+                                class="text-xs font-semibold text-gradientFrom dark:text-gradientFrom tracking-widest">CLICK
+                                TO LEARN MORE</span>
+                        </div>
                     </div>
 
                     <!-- Service Card 3 -->
-                    <div
-                        class="border border-gray-300 rounded-lg px-6 py-8 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 transition-all dark:border-gray-600 dark:hover:bg-darkHover/50">
-                        <div class="flex justify-center">
-                            <img src="./images/ui-icon.png" alt="Angular Development" class="w-10">
+                    <div class="service-card group bg-white dark:bg-darkHover/30 border-2 border-transparent hover:border-gradientFrom rounded-2xl px-8 py-10 cursor-pointer transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 dark:hover:shadow-2xl dark:hover:shadow-gradientFrom/30"
+                        data-title="Angular Frontend Development" data-image="./images/work-5.png"
+                        data-description="Modern Single Page Applications with Angular, RxJS, and state management. I create responsive UIs using Tailwind CSS and Angular Material with optimized performance and exceptional user experiences.">
+                        <div class="flex justify-center mb-6">
+                            <div
+                                class="w-16 h-16 bg-gradient-to-br from-gradientFrom to-gradientTo rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                <img src="./images/ui-icon.png" alt="Angular Development"
+                                    class="w-10 filter brightness-0 invert">
+                            </div>
                         </div>
-                        <h3 class="text-lg my-4 text-gray-700 text-center dark:text-white/80">Angular Development</h3>
-                        <p class="text-sm text-gray-600 leading-6 text-center dark:text-white/80">
-                            Modern SPAs with Angular, RxJS, and state management. Responsive UIs using Tailwind CSS,
-                            Angular Material, and optimized performance.
+                        <h3
+                            class="text-xl font-bold my-4 text-gray-800 text-center dark:text-white group-hover:text-gradientFrom dark:group-hover:text-gradientFrom transition-colors">
+                            Angular Frontend</h3>
+                        <p
+                            class="text-sm text-gray-600 leading-6 text-center dark:text-white/70 group-hover:text-gray-700 dark:group-hover:text-white transition-colors">
+                            Dynamic, responsive web interfaces with cutting-edge frontend technologies.
                         </p>
+                        <div class="flex justify-center mt-6 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span
+                                class="text-xs font-semibold text-gradientFrom dark:text-gradientFrom tracking-widest">CLICK
+                                TO LEARN MORE</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Service Modal -->
+    <div id="serviceModal"
+        class="hidden fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+        <div class="bg-white dark:bg-darkHover rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl">
+            <div class="relative">
+                <img id="modalImage" src="" alt="" class="w-full h-64 object-cover rounded-t-2xl">
+                <button id="closeModal"
+                    class="absolute top-4 right-4 bg-white dark:bg-darkTheme rounded-full p-2 hover:bg-gray-100 dark:hover:bg-darkHover/70 transition">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <div class="p-8">
+                <h2 id="modalTitle" class="text-3xl font-bold text-gray-800 dark:text-white mb-4"></h2>
+                <p id="modalDescription" class="text-gray-600 dark:text-gray-300 leading-7"></p>
+                <div class="mt-8 flex gap-4">
+                    <a href="#Contact"
+                        class="px-6 py-3 bg-gradient-to-r from-gradientFrom to-gradientTo text-white rounded-lg font-semibold hover:opacity-90 transition">Get
+                        Started</a>
+                    <button id="closeModal2"
+                        class="px-6 py-3 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-white rounded-lg font-semibold hover:bg-gray-50 dark:hover:bg-darkTheme transition">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- My Work Section -->
-    <div id="Work" class="w-full px-4 sm:px-[12%] py-10 scroll-mt-20">
+    <div id="Work"
+        class="w-full px-4 sm:px-[12%] py-10 scroll-mt-20 bg-gradient-to-b from-gray-50 via-white to-white dark:from-darkTheme dark:via-darkTheme dark:to-darkTheme">
         <div class="max-w-7xl mx-auto">
             <h4 class="text-center mb-2 text-lg">My Portfolio</h4>
             <h2 class="text-center text-3xl sm:text-4xl lg:text-5xl mb-8">My latest work</h2>
             <div class="flex justify-center">
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 w-full max-w-6xl -z-10">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-4xl">
                     <!-- Work Item 1 -->
-                    <div
-                        class="aspect-square bg-[url('./images/work-5.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group overflow-hidden">
+<div class="work-card aspect-square bg-[url('./images/Screenshot1.png')] bg-no-repeat bg-cover bg-center rounded-xl relative cursor-pointer group overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500"
+    data-title="Taleb Discount Platform" data-category="Full Stack"
+    data-description="A multi-tenant discount platform with 3 specialized interfaces: School Students (birth certificate verification, educational products), University Students (university email + national ID verification, tech products), and Vendors Dashboard (product management, transaction monitoring, sales analytics). Features product catalog with advanced filtering, discount codes, real-time order tracking, feedback system, email verification, and secure JWT authentication."
+    data-tech=".NET 8, ASP.NET Core Web API, Entity Framework Core, SQL Server, JWT, AutoMapper, Angular 20, TypeScript, RxJS, Tailwind CSS, Swagger/OpenAPI"
+    data-repository="https://github.com/fadywageih/Taleb_Discount_Solution"
+    data-backend="https://github.com/fadywageih/Taleb_Discount_Solution"
+    data-frontend="https://github.com/fadywageih/taleb-discount-angular"
+    data-backend-label="View Repository for Back End"
+    data-frontend-label="View Repository for Front End"
+    data-image="./images/Screenshot1.png" data-live="">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+    </div>
+    <div class="absolute inset-0 flex items-end justify-center pb-4">
+        <div class="bg-white/95 backdrop-blur-sm w-11/12 sm:w-10/12 rounded-lg py-3 px-4 flex items-center justify-between duration-300 transform group-hover:scale-105 group-hover:translate-y-0 translate-y-2 transition-all">
+            <div>
+                <h2 class="font-bold text-base dark:text-black">Taleb Discount</h2>
+                <p class="text-xs text-gray-600">Full Stack</p>
+            </div>
+            <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-md group-hover:bg-gradientFrom group-hover:text-white transition-all">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                </svg>
+            </div>
+        </div>
+    </div>
+</div>
+                    <div class="work-card aspect-square bg-[url('./images/Screenshot.png')] bg-no-repeat bg-cover bg-center rounded-xl relative cursor-pointer group overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500"
+                        data-title="Giora - Export Platform" data-category="Full Stack"
+                        data-description=" EXPORT IS OUR PASSION! Leading Egyptian exports to global markets. A comprehensive trading and logistics platform featuring CBM Calculator, Tracking system, Shipping Services, and Global Trade solutions. Streamlines transport, import, and export operations with professional customs services."
+                        data-tech="Node.js, Vanilla JavaScript, MongoDB, Express.js , Tailwind CSS"
+                        data-repository="https://github.com/fadywageih/GivoraV11" data-image="./images/Screenshot.png"
+                        data-live="https://www.tradexeg.com/">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
                         <div class="absolute inset-0 flex items-end justify-center pb-4">
                             <div
-                                class="bg-white/90 backdrop-blur-sm w-11/12 sm:w-10/12 rounded-md py-2 sm:py-3 px-3 sm:px-5 flex items-center justify-between duration-300 transform group-hover:scale-105 transition-all">
+                                class="bg-white/95 backdrop-blur-sm w-11/12 sm:w-10/12 rounded-lg py-3 px-4 flex items-center justify-between duration-300 transform group-hover:scale-105 group-hover:translate-y-0 translate-y-2 transition-all">
                                 <div>
-                                    <h2 class="font-semibold text-sm sm:text-base dark:text-black/80">FrontEnd Project
-                                    </h2>
-                                    <p class="text-xs sm:text-sm text-gray-700">Web Design</p>
+                                    <h2 class="font-bold text-base dark:text-black">Giora Export Platform</h2>
+                                    <p class="text-xs text-gray-600">Full Stack</p>
                                 </div>
                                 <div
-                                    class="border rounded-full border-black w-7 sm:w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-blue-300 transition">
-                                    <img src="./images/send-icon.png" alt="" class="w-3 sm:w-5">
+                                    class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-md group-hover:bg-gradientFrom group-hover:text-white transition-all">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                                    </svg>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                     <!-- Work Item 2 -->
-                    <div
-                        class="aspect-square bg-[url('./images/work-6.jpg')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group overflow-hidden">
-                        <div class="absolute inset-0 flex items-end justify-center pb-4">
-                            <div
-                                class="bg-white/90 backdrop-blur-sm w-11/12 sm:w-10/12 rounded-md py-2 sm:py-3 px-3 sm:px-5 flex items-center justify-between duration-300 transform group-hover:scale-105 transition-all">
-                                <div>
-                                    <h2 class="font-semibold text-sm sm:text-base dark:text-black/80">BackEnd Project
-                                    </h2>
-                                    <p class="text-xs sm:text-sm text-gray-700">API Development</p>
-                                </div>
-                                <div
-                                    class="border rounded-full border-black w-7 sm:w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-blue-300 transition">
-                                    <img src="./images/send-icon.png" alt="" class="w-3 sm:w-5">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+<div class="work-card aspect-square bg-[url('./images/Screenshot4.png')] bg-no-repeat bg-cover bg-center rounded-xl relative cursor-pointer group overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500"
+    data-title="Employee & Department Management - MVC"
+    data-category="Full Stack MVC"
+    data-description="A modern, secure HR/Management system built with ASP.NET Core MVC and Tailwind CSS. Features complete Department & Employee CRUD operations, user authentication with email confirmation, and secure password recovery via email reset tokens. Implements multi-layer architecture with BLL/DAL separation, Repository & Unit of Work patterns, and ASP.NET Core Identity. The system offers a clean, responsive interface with utility-first Tailwind CSS styling, role-based authorization ready, and follows clean code practices with DTOs and service layer abstraction."
+    data-tech="ASP.NET Core MVC, Entity Framework Core, SQL Server, ASP.NET Core Identity, Tailwind CSS, JavaScript, Repository Pattern, Unit of Work"
+    data-repository="https://github.com/fadywageih/EmployeeDepartmentMVC_Solution"
+    data-image="./images/Screenshot4.png"
+    data-live="">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+    </div>
+    <div class="absolute inset-0 flex items-end justify-center pb-4">
+        <div class="bg-white/95 backdrop-blur-sm w-11/12 sm:w-10/12 rounded-lg py-3 px-4 flex items-center justify-between duration-300 transform group-hover:scale-105 group-hover:translate-y-0 translate-y-2 transition-all">
+            <div>
+                <h2 class="font-bold text-base dark:text-black">HR Management</h2>
+                <p class="text-xs text-gray-600">ASP.NET MVC</p>
+            </div>
+            <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-md group-hover:bg-gradientFrom group-hover:text-white transition-all">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                </svg>
+            </div>
+        </div>
+    </div>
+</div>
 
                     <!-- Work Item 3 -->
-                    <div
-                        class="aspect-square bg-[url('./images/work-3.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group overflow-hidden">
-                        <div class="absolute inset-0 flex items-end justify-center pb-4">
-                            <div
-                                class="bg-white/90 backdrop-blur-sm w-11/12 sm:w-10/12 rounded-md py-2 sm:py-3 px-3 sm:px-5 flex items-center justify-between duration-300 transform group-hover:scale-105 transition-all">
-                                <div>
-                                    <h2 class="font-semibold text-sm sm:text-base dark:text-black/80">FullStack Project
-                                    </h2>
-                                    <p class="text-xs sm:text-sm text-gray-700">Web Application</p>
-                                </div>
-                                <div
-                                    class="border rounded-full border-black w-7 sm:w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-blue-300 transition">
-                                    <img src="./images/send-icon.png" alt="" class="w-3 sm:w-5">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+<div class="work-card aspect-square bg-[url('./images/Screenshot2.png')] bg-no-repeat bg-cover bg-center rounded-xl relative cursor-pointer group overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500"
+    data-title="E-Commerce Platform - Backend Focus" data-category="Backend (.NET 8)"
+    data-description="A full-featured e-commerce platform built with Clean Architecture. Features include: Product Catalog with Filtering & Pagination, Shopping Basket Management, Order Processing & Tracking, Secure Payment Gateway (Stripe), and JWT Authentication. Built with Domain-Driven Design, Repository Pattern, Unit of Work, and Specification Pattern. API Response Standardization and Global Exception Handling."
+    data-tech="ASP.NET Core 8, Entity Framework Core, SQL Server, JWT, Stripe API, AutoMapper, Clean Architecture, DDD, Repository Pattern, Unit of Work"
+    data-repository="https://github.com/fadywageih/E--CommerceSolution"
+    data-image="./images/Screenshot2.png"
+    data-live="">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+    </div>
+    <div class="absolute inset-0 flex items-end justify-center pb-4">
+        <div class="bg-white/95 backdrop-blur-sm w-11/12 sm:w-10/12 rounded-lg py-3 px-4 flex items-center justify-between duration-300 transform group-hover:scale-105 group-hover:translate-y-0 translate-y-2 transition-all">
+            <div>
+                <h2 class="font-bold text-base dark:text-black">E-Commerce Backend</h2>
+                <p class="text-xs text-gray-600">.NET 8</p>
+            </div>
+            <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-md group-hover:bg-gradientFrom group-hover:text-white transition-all">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                </svg>
+            </div>
+        </div>
+    </div>
+</div>
+                    <!-- Work Item 4: TradeX -->
+<div class="work-card aspect-square bg-[url('./images/Screenshot3.png')] bg-no-repeat bg-cover bg-center rounded-xl relative cursor-pointer group overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500"
+    data-title="TradeX - Export & Import Platform"
+    data-category="Frontend (HTML/Tailwind)"
+    data-description="A professional website for TradeX, an Egyptian export and import services company. The platform showcases company services (Exporting, Importing, Shipping, Trading), featured products, and company information with over 20 years of experience serving 50+ countries. Built with clean HTML, Tailwind CSS for responsive styling, and vanilla JavaScript for interactivity. Includes pages for CBM Calculator, Export, Import, Shipping, Trade inquiries, and a contact section. Optimized for SEO with sitemap and robots.txt."
+    data-tech="HTML5, Tailwind CSS, JavaScript, SEO Optimization"
+    data-repository="https://github.com/fadywageih/Treadex"
+    data-live="https://www.tradexeg.com/"
+    data-image="./images/Screenshot3.png">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+    </div>
+    <div class="absolute inset-0 flex items-end justify-center pb-4">
+        <div class="bg-white/95 backdrop-blur-sm w-11/12 sm:w-10/12 rounded-lg py-3 px-4 flex items-center justify-between duration-300 transform group-hover:scale-105 group-hover:translate-y-0 translate-y-2 transition-all">
+            <div>
+                <h2 class="font-bold text-base dark:text-black">TradeX Platform</h2>
+                <p class="text-xs text-gray-600">HTML/Tailwind</p>
+            </div>
+            <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-md group-hover:bg-gradientFrom group-hover:text-white transition-all">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                </svg>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="work-card aspect-square bg-[url('./images/Screenshot5.png')] bg-no-repeat bg-cover bg-center rounded-xl relative cursor-pointer group overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500"
+    data-title="Real Estate Listing Platform - MVC"
+    data-category="Full Stack MVC"
+    data-description="A full-featured property marketplace built with ASP.NET Core MVC and Tailwind CSS. Users can list and discover apartments, villas, and land for sale. Features include: property browsing with detailed views, user authentication with email verification, secure password recovery via email reset tokens, user profile settings, and multi-category property listings. Built with clean multi-layer architecture (BLL/DAL separation), Repository pattern, DTOs, and secure file uploads for property images. Perfect for real estate agencies and individual sellers/buyers."
+    data-tech="ASP.NET Core MVC, Entity Framework Core, SQL Server, ASP.NET Core Identity, Tailwind CSS, JavaScript, Repository Pattern, BLL/DAL Architecture"
+    data-repository="https://github.com/fadywageih/RealStateMVC_Solution"
+    data-image="./images/Screenshot5.png"
+    data-live="">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+    </div>
+    <div class="absolute inset-0 flex items-end justify-center pb-4">
+        <div class="bg-white/95 backdrop-blur-sm w-11/12 sm:w-10/12 rounded-lg py-3 px-4 flex items-center justify-between duration-300 transform group-hover:scale-105 group-hover:translate-y-0 translate-y-2 transition-all">
+            <div>
+                <h2 class="font-bold text-base dark:text-black">Real Estate Platform</h2>
+                <p class="text-xs text-gray-600">ASP.NET MVC</p>
+            </div>
+            <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-md group-hover:bg-gradientFrom group-hover:text-white transition-all">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                </svg>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                    <!-- Work Item 4 -->
-                    <div
-                        class="aspect-square bg-[url('./images/work-2.jpg')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group overflow-hidden">
-                        <div class="absolute inset-0 flex items-end justify-center pb-4">
-                            <div
-                                class="bg-white/90 backdrop-blur-sm w-11/12 sm:w-10/12 rounded-md py-2 sm:py-3 px-3 sm:px-5 flex items-center justify-between duration-300 transform group-hover:scale-105 transition-all">
-                                <div>
-                                    <h2 class="font-semibold text-sm sm:text-base dark:text-black/80">Mobile Project
-                                    </h2>
-                                    <p class="text-xs sm:text-sm text-gray-700">Responsive Design</p>
-                                </div>
-                                <div
-                                    class="border rounded-full border-black w-7 sm:w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-blue-300 transition">
-                                    <img src="./images/send-icon.png" alt="" class="w-3 sm:w-5">
-                                </div>
-                            </div>
-                        </div>
+    <!-- Work Project Modal -->
+    <div id="workModal"
+        class="hidden fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+        <div class="bg-white dark:bg-darkHover rounded-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-2xl">
+            <!-- Modal Header -->
+            <div class="relative">
+                <img id="workModalImage" src="" alt="" class="w-full h-80 object-cover rounded-t-2xl">
+                <button id="closeWorkModal"
+                    class="absolute top-4 right-4 bg-white dark:bg-darkTheme rounded-full p-2 hover:bg-gray-100 dark:hover:bg-darkHover/70 transition shadow-lg">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Modal Content -->
+            <div class="p-8">
+                <div class="mb-6">
+                    <h2 id="workModalTitle" class="text-4xl font-bold text-gray-800 dark:text-white mb-2"></h2>
+                    <p id="workModalCategory"
+                        class="text-sm font-semibold text-gradientFrom dark:text-gradientFrom uppercase tracking-widest">
+                    </p>
+                </div>
+
+                <p id="workModalDescription" class="text-gray-600 dark:text-gray-300 leading-8 mb-8 text-base"></p>
+
+                <!-- Technologies -->
+                <div class="mb-8">
+                    <h3 class="text-lg font-bold text-gray-800 dark:text-white mb-4">Technologies Used</h3>
+                    <div id="workModalTech" class="flex flex-wrap gap-2">
+                        <!-- Will be populated by JS -->
                     </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="flex gap-4 flex-wrap">
+                    <a id="workModalRepository" href="#" target="_blank"
+                        class="px-6 py-3 bg-gradient-to-r from-gradientFrom to-gradientTo text-white rounded-lg font-semibold hover:opacity-90 transition inline-flex items-center gap-2">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                        </svg>
+                        View Repository
+                    </a>
+                    <a id="workModalBackend" href="#" target="_blank"
+                        class="hidden px-6 py-3 bg-gradient-to-r from-gradientFrom to-gradientTo text-white rounded-lg font-semibold hover:opacity-90 transition inline-flex items-center gap-2">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                        </svg>
+                        Back End Repository
+                    </a>
+                    <a id="workModalFrontend" href="#" target="_blank"
+                        class="hidden px-6 py-3 bg-gradient-to-r from-gradientFrom to-gradientTo text-white rounded-lg font-semibold hover:opacity-90 transition inline-flex items-center gap-2">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                        </svg>
+                        Front End Repository
+                    </a>
+                    <a id="workModalLive" href="#" target="_blank"
+                        class="hidden px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-semibold transition inline-flex items-center gap-2">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                        </svg>
+                        Live Demo
+                    </a>
+                    <button id="closeWorkModal2"
+                        class="px-6 py-3 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-white rounded-lg font-semibold hover:bg-gray-50 dark:hover:bg-darkTheme transition">
+                        Close
+                    </button>
                 </div>
             </div>
         </div>
@@ -354,22 +574,22 @@
             </p>
 
             <div class="flex justify-center">
-                <form id="contactForm"   action="https://formspree.io/f/xregvoyb" method="POST" class="w-full max-w-2xl">
+                <form id="contactForm" action="https://formspree.io/f/xregvoyb" method="POST" class="w-full max-w-2xl">
                     <input type="hidden" name="access_key" value="00841dcd-3462-47b0-9823-c3c2c081802e">
                     <input type="hidden" name="subject" value="New Message from Portfolio">
-                    
+
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-10 mb-8">
-                        <input type="text" placeholder="Enter your name" name="name" required 
+                        <input type="text" placeholder="Enter your name" name="name" required
                             class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent dark:bg-darkTheme/50 dark:border-gray-600 dark:text-white dark:placeholder-gray-400">
-                        <input type="email" placeholder="Enter your email" name="email" required 
+                        <input type="email" placeholder="Enter your email" name="email" required
                             class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent dark:bg-darkTheme/50 dark:border-gray-600 dark:text-white dark:placeholder-gray-400">
                     </div>
 
-                    <textarea rows="6" placeholder="Enter your message" name="message" required 
+                    <textarea rows="6" placeholder="Enter your message" name="message" required
                         class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent dark:bg-darkTheme/50 dark:border-gray-600 dark:text-white dark:placeholder-gray-400 mb-6"></textarea>
 
                     <div class="flex justify-center">
-                        <button type="submit" id="submitBtn" 
+                        <button type="submit" id="submitBtn"
                             class="px-10 py-3 border rounded-full bg-gradient-to-r from-gradientFrom to-gradientTo dark:from-darkGradientFrom dark:to-darkGradientTo text-white flex items-center gap-2 hover:opacity-90 transition-opacity">
                             <span id="submitText">Submit now</span>
                             <span id="submitIcon">
@@ -382,7 +602,7 @@
                 </form>
             </div>
         </div>
-        
+
         <div class="mt-8 text-center">
             <p class="mb-4">Or contact me directly:</p>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -445,9 +665,6 @@
         </div>
     </div>
 
-    <script src="./script.js">
-       
-    </script>
-</body>
+    <script src="./script.js"></script>
 
 </html>

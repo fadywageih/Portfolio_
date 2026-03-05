@@ -117,3 +117,129 @@
                 return true;
             }
         });
+
+        // Service Cards Modal Functionality
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.addEventListener('click', () => {
+                const title = card.getAttribute('data-title');
+                const image = card.getAttribute('data-image');
+                const description = card.getAttribute('data-description');
+
+                document.getElementById('modalTitle').textContent = title;
+                document.getElementById('modalImage').src = image;
+                document.getElementById('modalDescription').textContent = description;
+                document.getElementById('serviceModal').classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        // Close Service Modal
+        const closeServiceModal = () => {
+            document.getElementById('serviceModal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        };
+
+        document.getElementById('closeModal').addEventListener('click', closeServiceModal);
+        document.getElementById('closeModal2').addEventListener('click', closeServiceModal);
+
+        // Close service modal when clicking outside
+        document.getElementById('serviceModal').addEventListener('click', (e) => {
+            if (e.target.id === 'serviceModal') {
+                closeServiceModal();
+            }
+        });
+
+        // Work Cards Modal Functionality
+        document.querySelectorAll('.work-card').forEach(card => {
+            card.addEventListener('click', () => {
+                const title = card.getAttribute('data-title');
+                const category = card.getAttribute('data-category');
+                const description = card.getAttribute('data-description');
+                const tech = card.getAttribute('data-tech');
+                const repository = card.getAttribute('data-repository');
+                const backend = card.getAttribute('data-backend');
+                const frontend = card.getAttribute('data-frontend');
+                const image = card.getAttribute('data-image');
+                const live = card.getAttribute('data-live');
+
+                document.getElementById('workModalTitle').textContent = title;
+                document.getElementById('workModalCategory').textContent = category;
+                document.getElementById('workModalDescription').textContent = description;
+                document.getElementById('workModalImage').src = image;
+
+                // Handle repository buttons
+                const repoButton = document.getElementById('workModalRepository');
+                const backendButton = document.getElementById('workModalBackend');
+                const frontendButton = document.getElementById('workModalFrontend');
+
+                if (backend && frontend) {
+                    // Show separate backend and frontend buttons
+                    repoButton.classList.add('hidden');
+                    backendButton.href = backend;
+                    backendButton.classList.remove('hidden');
+                    frontendButton.href = frontend;
+                    frontendButton.classList.remove('hidden');
+                } else if (repository) {
+                    // Show single repository button
+                    repoButton.href = repository;
+                    repoButton.classList.remove('hidden');
+                    backendButton.classList.add('hidden');
+                    frontendButton.classList.add('hidden');
+                } else {
+                    // Hide all repository buttons if none available
+                    repoButton.classList.add('hidden');
+                    backendButton.classList.add('hidden');
+                    frontendButton.classList.add('hidden');
+                }
+
+                // Show/Hide live demo button
+                const liveButton = document.getElementById('workModalLive');
+                if (live) {
+                    liveButton.href = live;
+                    liveButton.classList.remove('hidden');
+                } else {
+                    liveButton.classList.add('hidden');
+                }
+
+                // Populate technologies
+                const techContainer = document.getElementById('workModalTech');
+                techContainer.innerHTML = '';
+                tech.split(', ').forEach(t => {
+                    const badge = document.createElement('span');
+                    badge.className = 'px-4 py-2 bg-gray-100 dark:bg-darkTheme text-gray-700 dark:text-gray-300 rounded-full text-sm font-medium';
+                    badge.textContent = t;
+                    techContainer.appendChild(badge);
+                });
+
+                document.getElementById('workModal').classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        // Close Work Modal
+        const closeWorkModalFunc = () => {
+            document.getElementById('workModal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        };
+
+        document.getElementById('closeWorkModal').addEventListener('click', closeWorkModalFunc);
+        document.getElementById('closeWorkModal2').addEventListener('click', closeWorkModalFunc);
+
+        // Close work modal when clicking outside
+        document.getElementById('workModal').addEventListener('click', (e) => {
+            if (e.target.id === 'workModal') {
+                closeWorkModalFunc();
+            }
+        });
+
+        // Close modals with Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                if (!document.getElementById('serviceModal').classList.contains('hidden')) {
+                    closeServiceModal();
+                }
+                if (!document.getElementById('workModal').classList.contains('hidden')) {
+                    closeWorkModalFunc();
+                }
+            }
+        });
